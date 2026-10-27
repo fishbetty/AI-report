@@ -19,7 +19,8 @@
 
 ### Step 1. 掛載 Google Drive
 連動使用者雲端硬碟以進行檔案管理與持久化儲存。
-<img width="916" height="130" alt="image" src="https://github.com/user-attachments/assets/6578025c-fd7e-487b-814e-3b898d10722c" />
+<img width="907" height="82" alt="image" src="https://github.com/user-attachments/assets/2b97cd7e-df10-4243-94cc-9aee65d05d52" />
+
 
 ### Step 2. 建立專案目錄與主程式
 在 Google Drive 中自動建立 `my_project` 資料夾，並寫入 `main.py`。
