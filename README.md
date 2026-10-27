@@ -23,7 +23,7 @@
 1. 開啟 [Google Drive](https://drive.google.com/)。
 2. 在空白處點擊右鍵 ➔ 選擇 **「上傳資料夾」**。
 3. 將本地專案資料夾（如 `my_project`）完整上傳。
-![Uploading image.png…]()
+<img width="921" height="329" alt="image" src="https://github.com/user-attachments/assets/16718e22-c6fe-46cd-b98d-23b328d3b775" />
 
 ---
 
@@ -31,6 +31,7 @@
 1. 在 Google Drive 中點擊左上角 **「新增」➔「更多」➔「Google Colaboratory」**。
 2. 在頂部功能表點選 **「編輯 (Edit)」➔「筆記本設定 (Notebook settings)」**（或「執行階段」➔「變更執行階段類型」）。
 3. 硬體加速器選擇 **GPU**，確認後點擊儲存。
+<img width="917" height="158" alt="image" src="https://github.com/user-attachments/assets/d945b98f-2627-4d9a-9dd5-e9ee03271fd4" />
 
 ---
 
@@ -41,6 +42,7 @@
 from google.colab import drive
 drive.mount('/content/drive')
 ```
+<img width="908" height="290" alt="image" src="https://github.com/user-attachments/assets/cc26ded8-050f-43bb-a555-c7de1bfc5777" />
 
 ---
 
@@ -59,6 +61,7 @@ os.chdir('/content/drive/MyDrive/my_project')
 # 執行專案主程式
 !python main.py
 ```
+![Uploading image.png…]()
 
 ---
 
