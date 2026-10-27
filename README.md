@@ -23,7 +23,7 @@
 
 ### Step 2. 建立專案目錄與主程式
 在 Google Drive 中自動建立 `my_project` 資料夾，並寫入 `main.py`。
-<img width="921" height="329" alt="image" src="https://github.com/user-attachments/assets/16718e22-c6fe-46cd-b98d-23b328d3b775" />
+<img width="920" height="335" alt="image" src="https://github.com/user-attachments/assets/5af51cf9-33d0-42fc-b6bb-089f15177007" />
 
 ### Step 3. 模型訓練與評估
 (`main.py`)**：
