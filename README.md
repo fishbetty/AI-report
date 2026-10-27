@@ -4,6 +4,7 @@
 ## 11224213 林巧芝 11224216 林品妤
 
 本專案記錄如何將本地端開發完成的機器學習/深度學習專案，透過 **Google Drive** 掛載到 **Google Colaboratory (Colab)** 環境中，並利用免費雲端 GPU 算力完成訓練與執行。
+<img width="916" height="130" alt="image" src="https://github.com/user-attachments/assets/6578025c-fd7e-487b-814e-3b898d10722c" />
 
 ---
 
@@ -22,6 +23,7 @@
 1. 開啟 [Google Drive](https://drive.google.com/)。
 2. 在空白處點擊右鍵 ➔ 選擇 **「上傳資料夾」**。
 3. 將本地專案資料夾（如 `my_project`）完整上傳。
+![Uploading image.png…]()
 
 ---
 
