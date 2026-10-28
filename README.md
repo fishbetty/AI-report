@@ -68,7 +68,7 @@ print(f"測試樣本預測結果: {pred[0]} (真實標籤: {digits.target[0]})")
    - 測試並顯示個別樣本的預測與真實標籤比較。
    - 
 ```python
-   - import os
+import os
 os.chdir('/content/drive/MyDrive/my_project')
 
 # 查看當前目錄檔案（會看到剛剛建立的 main.py）
