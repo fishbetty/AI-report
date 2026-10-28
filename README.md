@@ -66,7 +66,6 @@ print(f"測試樣本預測結果: {pred[0]} (真實標籤: {digits.target[0]})")
    - 使用 `LogisticRegression`（邏輯回歸）進行分類模型訓練。
    - 計算並輸出模型在訓練集上的正確率。
    - 測試並顯示個別樣本的預測與真實標籤比較。
-   - 
 ```python
 import os
 os.chdir('/content/drive/MyDrive/my_project')
@@ -83,6 +82,28 @@ os.chdir('/content/drive/MyDrive/my_project')
 ### Step 4. 結果視覺化
    - 使用 `matplotlib` 繪製前 5 張 $8 \times 8$ 灰階數字影像。
    - 在標題顯示預測結果與真實標籤（預測正確顯示綠色字體，預測錯誤顯示紅色字体）。
+```python
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_digits
+from sklearn.linear_model import LogisticRegression
+
+digits = load_digits()
+model = LogisticRegression(max_iter=1000).fit(digits.data, digits.target)
+
+# 取前 5 張影像進行測試
+fig, axes = plt.subplots(1, 5, figsize=(10, 3))
+for i in range(5):
+    img = digits.data[i:i+1]
+    pred = model.predict(img)[0]
+    true_label = digits.target[i]
+    
+    axes[i].imshow(digits.images[i], cmap='gray')
+    axes[i].set_title(f"Pred: {pred}\nTrue: {true_label}", color="green" if pred == true_label else "red")
+    axes[i].axis('off')
+
+plt.tight_layout()
+plt.show()
+```
 <img width="908" height="290" alt="image" src="https://github.com/user-attachments/assets/cc26ded8-050f-43bb-a555-c7de1bfc5777" />
 
 ---
