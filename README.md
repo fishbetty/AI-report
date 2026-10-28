@@ -19,6 +19,11 @@
 
 ### Step 1. 掛載 Google Drive
 連動使用者雲端硬碟以進行檔案管理與持久化儲存。
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+
 <img width="907" height="82" alt="image" src="https://github.com/user-attachments/assets/2b97cd7e-df10-4243-94cc-9aee65d05d52" />
 
 
@@ -32,23 +37,6 @@
    - 使用 `LogisticRegression`（邏輯回歸）進行分類模型訓練。
    - 計算並輸出模型在訓練集上的正確率。
    - 測試並顯示個別樣本的預測與真實標籤比較。
-
-   - ```python
-from sklearn.datasets import load_digits
-from sklearn.linear_model import LogisticRegression
-
-print("正在加載資料集並訓練模型...")
-digits = load_digits()
-
-# 訓練手寫數字分類模型
-model = LogisticRegression(max_iter=1000).fit(digits.data, digits.target)
-acc = model.score(digits.data, digits.target)
-
-print(f"訓練完成！模型在資料集上的準確率: {acc * 100:.2f}%")
-
-# 測試第 0 筆樣本預測
-pred = model.predict(digits.data[0:1])
-print(f"測試樣本預測結果: {pred[0]} (真實標籤: {digits.target[0]})")
 <img width="917" height="158" alt="image" src="https://github.com/user-attachments/assets/d945b98f-2627-4d9a-9dd5-e9ee03271fd4" />
 
 
