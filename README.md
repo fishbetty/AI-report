@@ -28,6 +28,36 @@ drive.mount('/content/drive')
 
 ### Step 2. 建立專案目錄與主程式
 在 Google Drive 中自動建立 `my_project` 資料夾，並寫入 `main.py`。
+
+```python
+import os
+
+# 建立專案資料夾
+project_path = '/content/drive/MyDrive/my_project'
+os.makedirs(project_path, exist_ok=True)
+
+# 切換工作目錄到該資料夾
+os.chdir(project_path)
+```
+```python
+# 寫入 main.py 檔案
+%%writefile /content/drive/MyDrive/my_project/main.py
+from sklearn.datasets import load_digits
+from sklearn.linear_model import LogisticRegression
+
+print("正在加載資料集並訓練模型...")
+digits = load_digits()
+
+# 訓練手寫數字分類模型
+model = LogisticRegression(max_iter=1000).fit(digits.data, digits.target)
+acc = model.score(digits.data, digits.target)
+
+print(f"訓練完成！模型在資料集上的準確率: {acc * 100:.2f}%")
+
+# 測試第 0 筆樣本預測
+pred = model.predict(digits.data[0:1])
+print(f"測試樣本預測結果: {pred[0]} (真實標籤: {digits.target[0]})")
+```
 <img width="920" height="335" alt="image" src="https://github.com/user-attachments/assets/5af51cf9-33d0-42fc-b6bb-089f15177007" />
 
 ### Step 3. 模型訓練與評估
