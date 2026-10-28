@@ -66,6 +66,17 @@ print(f"測試樣本預測結果: {pred[0]} (真實標籤: {digits.target[0]})")
    - 使用 `LogisticRegression`（邏輯回歸）進行分類模型訓練。
    - 計算並輸出模型在訓練集上的正確率。
    - 測試並顯示個別樣本的預測與真實標籤比較。
+   - 
+```python
+   - import os
+os.chdir('/content/drive/MyDrive/my_project')
+
+# 查看當前目錄檔案（會看到剛剛建立的 main.py）
+!ls
+
+# 執行 python 檔案
+!python main.py
+```
 <img width="917" height="158" alt="image" src="https://github.com/user-attachments/assets/d945b98f-2627-4d9a-9dd5-e9ee03271fd4" />
 
 
