@@ -12,7 +12,6 @@
 - `scikit-learn`
 - `matplotlib`
 - Google Colab（可直接掛載 Google Drive）
-
 ---
 
 ## 本專案主要包含以下步驟：
@@ -23,7 +22,7 @@
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
-
+```
 <img width="907" height="82" alt="image" src="https://github.com/user-attachments/assets/2b97cd7e-df10-4243-94cc-9aee65d05d52" />
 
 
